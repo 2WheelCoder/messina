@@ -1,4 +1,7 @@
 I. Messina: Statements of Fashion
-	A. About Messina
-	B. Heading
+	A. Site Navigation
+	B. Search
+	C. About Messina
+	D. Heading
 		1. Heading
+	E. Contact Us
