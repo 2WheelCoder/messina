@@ -1,0 +1,22 @@
+/**
+ * @file
+ * bootstrap/_variables.scss
+ * Defines the common breakpoint, mixins used throughout the site.
+ */
+
+//
+// Variables
+//
+
+/**
+ * Provides a naming structure for bold/selective design/responsive
+ * breakpoints.
+ * 
+ * @usage:
+ *   bootstrap/_respond-to.scss
+ * @suggestion:
+ *   layouts/layout-{variable}.scss - for consistency
+ */
+$small: 480px;
+$medium: 720px;
+$large: 960px;

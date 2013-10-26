@@ -1,0 +1,92 @@
+/**
+ * @style.scss
+ * Include/exclude partials to be compiled
+ */
+/* Global utility mixins and vars etc. */
+/**
+ * @file
+ * bootstrap/_variables.scss
+ * Defines the common breakpoint, mixins used throughout the site.
+ */
+/**
+ * Provides a naming structure for bold/selective design/responsive
+ * breakpoints.
+ * 
+ * @usage:
+ *   bootstrap/_respond-to.scss
+ * @suggestion:
+ *   layouts/layout-{variable}.scss - for consistency
+ */
+/**
+ * Some defaults leveraging this breakpoints mixin.
+ */
+/**
+ * @file
+ * bootstrap/_respond-to.scss
+ * Defines the common breakpoint, mixins used throughout the site.
+ */
+/**
+ *! Provides a
+ *
+ *! @param $primary
+ *!   .
+ *! @param $secondary
+ *!   .
+ */
+/*
+@include respond-to(500px) { //min-width is default
+}
+
+@include respond-to(800px, max-width) {
+}
+
+@include respond-to(500px, 800px) {
+}
+
+@include respond-to($small) {
+}
+
+@include respond-to($upto-medium) {
+}
+*/
+/* Base styles; unclassed HTML elements etc. */
+/**
+ * @file
+ * base/_headings/scss
+ *
+ * @todo:
+ * Appears-in syntax
+ */
+/* line 19, ../sass/base/_headings.scss */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 22, ../sass/base/_headings.scss */
+h2 {
+  font-size: 1.8rem;
+}
+
+/* line 25, ../sass/base/_headings.scss */
+h3 {
+  font-size: 1.7rem;
+}
+
+/* line 32, ../sass/base/_headings.scss */
+.page-title, .page-title--uppercase {
+  font-size: 2rem;
+  color: pink;
+}
+
+/* line 40, ../sass/base/_headings.scss */
+.node-article .page-title {
+  color: purple;
+}
+
+/* line 46, ../sass/base/_headings.scss */
+.page-title--uppercase {
+  text-transform: uppercase;
+}
+
+/* Components and abstractions */
+/* Layout */
