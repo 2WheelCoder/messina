@@ -20,3 +20,47 @@
 $small: 480px;
 $medium: 720px;
 $large: 960px;
+
+// Colors
+$darkBlue: #2F2E46;
+$greyBlue: #D8E3E8;
+$white: #FFFFFF;
+$lightWhite: #F4F4F4;
+$whiteGrey: #F5F5F5;
+$darkestGrey: #4C4C4C;
+$darkerGrey: #555555;
+$darkGrey: #525252;
+$lightGrey: #90989B;
+$lighterGrey: #AAA9BA;
+$lightestGrey: #CFCFCF;
+$red: #D91818;
+$blue: #0030FE;
+$pink: #CB2457;
+
+// TODO: There are additional greys that need to be
+// addressed from the messina-home.psd file. I recommend
+// assimilating these into the above it will make for
+// smaller stylesheets and a tighter color palette.
+
+// Text
+$contentHeadingFontSize: 30px;
+$contentHeadingMarginBottom: 1em;
+$contentHeadingColor: $darkBlue;
+
+$contentSubheadFontSize: 20px;
+$contentSubheadMarginBottom: 1em;
+$contentSubheadColor: $darkGrey;
+
+$contentPFontSize: 16px;
+$contentPLineHeight: 1.2em;
+$contentPMarginBottom: 1.25em;
+$contentPColor: $darkGrey;
+
+// Borders
+$borderWidth: 1px;
+$borderStyle: solid;
+$borderColor: $lightestGrey;
+
+$contentBorderWidth: 1px;
+$contentBorderStyle: dotted;
+$contentBorderColor: $whiteGrey;
