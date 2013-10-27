@@ -17,9 +17,9 @@
  * @suggestion:
  *   layouts/layout-{variable}.scss - for consistency
  */
-$small: 480px;
-$medium: 720px;
-$large: 960px;
+// $small: 480px;
+// $medium: 720px;
+// $large: 960px;
 
 // Colors
 $darkBlue: #2F2E46;
@@ -41,6 +41,9 @@ $pink: #CB2457;
 // addressed from the messina-home.psd file. I recommend
 // assimilating these into the above it will make for
 // smaller stylesheets and a tighter color palette.
+
+// Layout
+$pageWidth: 940px;
 
 // Text
 $contentHeadingFontSize: 30px;

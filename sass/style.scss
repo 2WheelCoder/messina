@@ -4,17 +4,14 @@
  */
 
 /* Global utility mixins and vars etc. */
-@import "global/variables";
-@import "global/mixins";
-@import "global/breakpoint";
-@import "global/respond-to";
+@import "global/*";
+@import "global/**/*";
 
 /* Base styles; unclassed HTML elements etc. */
 @import "base/headings";
 
 /* Components and abstractions */
-// @import "components/somefile";
+@import "components/*";
 
 /* Layout */
-@import "layout/l-header";
-@import "layout/l-footer";
+@import "layout/*";

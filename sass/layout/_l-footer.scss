@@ -1,0 +1,18 @@
+.page-footer-wrapper {
+	margin: 0 auto;
+	width: $pageWidth;
+}
+
+.page-footer {
+	@extend %clearfix;
+}
+
+.footer-nav, .footer-contact-us {
+	float: left;
+	margin: 0 65px 0 0;
+	padding: 0;
+}
+
+.footer-logo {
+	float: right;
+}
