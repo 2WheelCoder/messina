@@ -1,0 +1,12 @@
+.search {
+	h2 {
+		display: none;
+	}
+
+	input {
+		@include fontSize(14px);
+
+		border: $borderWidth $borderStyle $borderColor;
+		outline: none;
+	}	
+}

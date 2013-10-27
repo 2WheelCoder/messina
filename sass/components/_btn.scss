@@ -1,0 +1,10 @@
+.btn {
+	text-transform: uppercase;
+}
+
+.btn-search {
+	@extend %white-button;
+
+	background: none;
+	height: 1.875em;
+}

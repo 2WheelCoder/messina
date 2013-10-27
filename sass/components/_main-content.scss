@@ -1,0 +1,7 @@
+.main-content {
+	p {
+		@include column-count(2);
+		
+		color: $darkestGrey;
+	}
+}
