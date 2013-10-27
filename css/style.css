@@ -136,25 +136,24 @@ h3 {
   text-transform: uppercase; }
 
 /* Components and abstractions */
-.main-nav {
+.page-header nav {
   border-bottom: 1px solid #cfcfcf;
   border-top: 1px solid #cfcfcf; }
-  .main-nav h2 {
-    display: none; }
-  .main-nav li {
-    display: inline; }
-  .main-nav a {
-    display: inline-block; }
-    .main-nav a:hover {
-      border-top: 3px solid #2f2e46; }
 
-.nav ul {
+.main-nav li {
+  display: inline; }
+.main-nav a {
+  display: inline-block; }
+  .main-nav a:hover {
+    border-top: 3px solid #2f2e46; }
+
+.nav {
   margin: 0;
   padding: 0; }
-.nav li {
-  list-style: none; }
-.nav a {
-  text-decoration: none; }
+  .nav li {
+    list-style: none; }
+  .nav a {
+    text-decoration: none; }
 
 /* Layout */
 .wrapper {
@@ -179,6 +178,8 @@ header h1 {
   text-align: center; }
 header nav {
   text-align: center; }
+header h2 {
+  display: none; }
 
 .main-content {
   float: left;
