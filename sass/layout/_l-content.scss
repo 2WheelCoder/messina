@@ -1,6 +1,11 @@
-.wrapper {
+.content-wrapper {
 	@extend %clearfix;
 
 	margin: 0 auto;
 	width: $pageWidth;
+}
+
+.main-content {
+	float: left;
+	width: 660px;
 }

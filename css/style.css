@@ -95,10 +95,13 @@
  * @suggestion:
  *   layouts/layout-{variable}.scss - for consistency
  */
-.wrapper, .page-footer {
+.content-wrapper, .page-footer {
   content: "";
   display: table;
   clear: both; }
+
+.btn-search {
+  border: 1px solid #cfcfcf; }
 
 /**
  * Convert font-size from px to rem with px fallback
@@ -136,6 +139,12 @@ h3 {
   text-transform: uppercase; }
 
 /* Components and abstractions */
+.btn {
+  text-transform: uppercase; }
+
+.btn-search {
+  background: none; }
+
 .page-header nav {
   border-bottom: 1px solid #cfcfcf;
   border-top: 1px solid #cfcfcf; }
@@ -155,21 +164,30 @@ h3 {
   .nav a {
     text-decoration: none; }
 
+.search h2 {
+  display: none; }
+.search input {
+  border: 1px solid #cfcfcf; }
+
 /* Layout */
-.wrapper {
+.content-wrapper {
   margin: 0 auto;
   width: 940px; }
+
+.main-content {
+  float: left;
+  width: 660px; }
 
 .page-footer-wrapper {
   margin: 0 auto;
   width: 940px; }
 
-.footer-nav, .footer-contact-us {
+.nav-footer, .page-footer-contact-us {
   float: left;
   margin: 0 65px 0 0;
   padding: 0; }
 
-.footer-logo {
+.page-footer-logo {
   float: right; }
 
 header h1 {
@@ -180,10 +198,6 @@ header nav {
   text-align: center; }
 header h2 {
   display: none; }
-
-.main-content {
-  float: left;
-  width: 660px; }
 
 .sidebar {
   float: right;
