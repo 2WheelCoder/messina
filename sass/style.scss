@@ -6,9 +6,11 @@
 
 /* Global utility mixins and vars etc. */
 @import "global/variables";
-@import "global/extends/clearfix";
-@import "global/extends/white-button";
 @import "global/mixins/fontSize";
+@import "global/extends/basic-border";
+@import "global/extends/clearfix";
+@import "global/extends/footer-text";
+
 
 /* Base styles; unclassed HTML elements etc. */
 @import "base/elements";
@@ -18,9 +20,13 @@
 @import "components/btn";
 @import "components/header";
 @import "components/text-content";
-@import "components/main-nav";
 @import "components/nav";
+@import "components/nav-footer";
+@import "components/nav-main";
+@import "components/nav-sidebar";
+@import "components/page-footer";
 @import "components/search";
+@import "components/sidebar";
 
 /* Layout */
 @import "layout/l-content";

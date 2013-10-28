@@ -1,0 +1,5 @@
+%footer-text {
+	@include fontSize(14px);
+	color: $darkestGrey;
+	font-style: italic;
+}

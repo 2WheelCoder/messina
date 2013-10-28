@@ -1,10 +1,9 @@
-.page-footer-wrapper {
-	margin: 0 auto;
-	width: $pageWidth;
-}
-
 .page-footer {
 	@extend %clearfix;
+
+	margin: 0 auto;
+	position: relative;
+	width: $pageWidth;
 }
 
 .nav-footer, .page-footer-contact-us {
@@ -14,5 +13,7 @@
 }
 
 .page-footer-logo {
-	float: right;
+	position: absolute;
+	right: 1.25em;
+	top: 0;
 }

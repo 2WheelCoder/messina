@@ -1,0 +1,11 @@
+%basic-border {
+	border: $borderWidth $borderStyle $borderColor;
+}
+
+%basic-border-top {
+	border-top: $borderWidth $borderStyle $borderColor;
+}
+
+%basic-border-bottom {
+	border-bottom: $borderWidth $borderStyle $borderColor;
+}

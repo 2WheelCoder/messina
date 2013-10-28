@@ -1,0 +1,10 @@
+.sidebar {
+	h2 {
+		@include fontSize(18px);
+
+		border-bottom: $borderWidth $borderStyle $lightGrey;
+		font-weight: 400;
+		margin: 2em 0 0.4em;
+		padding: 0 0 0.5em;
+	}
+}

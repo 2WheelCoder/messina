@@ -1,0 +1,17 @@
+.nav-footer {
+	li {
+		margin: 0 0 0.8em;
+	}
+
+	a {
+		@extend %footer-text;
+
+		&:hover, &.active {
+			margin-left: -11px;
+
+			&:before {
+				content: "\00BB\00A0";
+			}
+		}
+	}
+}

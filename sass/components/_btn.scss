@@ -3,8 +3,13 @@
 }
 
 .btn-search {
-	@extend %white-button;
+	@extend %basic-border;
+	@include fontSize(12px);
 
 	background: none;
-	height: 1.875em;
+	color: $lightGrey;
+	font-weight: 600;
+	padding: 0 4px;
+	height: 30px;
+	width: 58px;
 }
