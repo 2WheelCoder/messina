@@ -1,58 +1,175 @@
-/*
-Syntax error: File to import not found or unreadable: compass/CSS3.
-              Load paths:
-                /Users/nick/Dropbox/Sites/BDW/messina
-                /Users/nick/Dropbox/Sites/BDW/messina/sass
-                Sass::Globbing::Importer
-        on line 5 of sass/style.scss
+/**
+ * @style.scss
+ * Include/exclude partials to be compiled
+ */
+/* Global utility mixins and vars etc. */
+/**
+ * @file
+ * bootstrap/_variables.scss
+ * Defines the common breakpoint, mixins used throughout the site.
+ */
+/**
+ * Provides a naming structure for bold/selective design/responsive
+ * breakpoints.
+ * 
+ * @usage:
+ *   bootstrap/_respond-to.scss
+ * @suggestion:
+ *   layouts/layout-{variable}.scss - for consistency
+ */
+/* line 1, ../sass/global/extends/_clearfix.scss */
+.content-wrapper, .page-footer {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-1: /**
-2:  * @style.scss
-3:  * Include/exclude partials to be compiled
-4:  *\/
-5: @import "compass/CSS3";
-6: 
-7: /* Global utility mixins and vars etc. *\/
-8: @import "global/*";
-9: @import "global/**\/*";
-10: 
+/* line 1, ../sass/global/extends/_white-button.scss */
+.btn-search {
+  border: 1px solid #cfcfcf;
+}
 
-Backtrace:
-sass/style.scss:5
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:45:in `import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: compass/CSS3.\A               Load paths:\A                 /Users/nick/Dropbox/Sites/BDW/messina\A                 /Users/nick/Dropbox/Sites/BDW/messina/sass\A                 Sass::Globbing::Importer\A         on line 5 of sass/style.scss\A \A 1: /**\A 2:  * @style.scss\A 3:  * Include/exclude partials to be compiled\A 4:  */\A 5: @import \"compass/CSS3\";\A 6: \A 7: /* Global utility mixins and vars etc. */\A 8: @import \"global/*\";\A 9: @import \"global/**/*\";\A 10: "; }
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ * 
+ */
+/* Base styles; unclassed HTML elements etc. */
+/* line 1, ../sass/base/_elements.scss */
+body {
+  font-family: Georgia, serif;
+}
+
+/**
+ * @file
+ * base/_headings/scss
+ *
+ * @todo:
+ * Appears-in syntax
+ */
+/* line 19, ../sass/base/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Components and abstractions */
+/* line 1, ../sass/components/_btn.scss */
+.btn {
+  text-transform: uppercase;
+}
+
+/* line 5, ../sass/components/_btn.scss */
+.btn-search {
+  background: none;
+  height: 1.875em;
+}
+
+/* line 2, ../sass/components/_header.scss */
+.page-header nav {
+  border-bottom: 1px solid #cfcfcf;
+  border-top: 1px solid #cfcfcf;
+}
+
+/* line 2, ../sass/components/_main-content.scss */
+.main-content p {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+  color: #4c4c4c;
+}
+
+/* line 2, ../sass/components/_main-nav.scss */
+.main-nav li {
+  display: inline;
+}
+/* line 6, ../sass/components/_main-nav.scss */
+.main-nav a {
+  display: inline-block;
+}
+/* line 9, ../sass/components/_main-nav.scss */
+.main-nav a:hover {
+  border-top: 3px solid #2f2e46;
+}
+
+/* line 1, ../sass/components/_nav.scss */
+.nav {
+  margin: 0;
+  padding: 0;
+}
+/* line 5, ../sass/components/_nav.scss */
+.nav li {
+  list-style: none;
+}
+/* line 9, ../sass/components/_nav.scss */
+.nav a {
+  text-decoration: none;
+}
+
+/* line 2, ../sass/components/_search.scss */
+.search h2 {
+  display: none;
+}
+/* line 6, ../sass/components/_search.scss */
+.search input {
+  font-size: 14px;
+  font-size: 0.875rem;
+  border: 1px solid #cfcfcf;
+  outline: none;
+}
+
+/* Layout */
+/* line 1, ../sass/layout/_l-content.scss */
+.content-wrapper {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* line 8, ../sass/layout/_l-content.scss */
+.main-content {
+  float: left;
+  width: 660px;
+}
+
+/* line 1, ../sass/layout/_l-footer.scss */
+.page-footer-wrapper {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* line 10, ../sass/layout/_l-footer.scss */
+.nav-footer, .page-footer-contact-us {
+  float: left;
+  margin: 0 65px 0 0;
+  padding: 0;
+}
+
+/* line 16, ../sass/layout/_l-footer.scss */
+.page-footer-logo {
+  float: right;
+}
+
+/* line 3, ../sass/layout/_l-header.scss */
+header h1 {
+  margin: 0 auto;
+  width: 940px;
+  text-align: center;
+}
+/* line 9, ../sass/layout/_l-header.scss */
+header nav {
+  text-align: center;
+}
+/* line 13, ../sass/layout/_l-header.scss */
+header h2 {
+  display: none;
+}
+
+/* line 1, ../sass/layout/_l-sidebar.scss */
+.sidebar {
+  float: right;
+  width: 220px;
+}

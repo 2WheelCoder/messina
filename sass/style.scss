@@ -5,14 +5,25 @@
 @import "compass/CSS3";
 
 /* Global utility mixins and vars etc. */
-@import "global/*";
-@import "global/**/*";
+@import "global/variables";
+@import "global/extends/clearfix";
+@import "global/extends/white-button";
+@import "global/mixins/fontSize";
 
 /* Base styles; unclassed HTML elements etc. */
+@import "base/elements";
 @import "base/headings";
 
 /* Components and abstractions */
-@import "components/*";
+@import "components/btn";
+@import "components/header";
+@import "components/main-content";
+@import "components/main-nav";
+@import "components/nav";
+@import "components/search";
 
 /* Layout */
-@import "layout/*";
+@import "layout/l-content";
+@import "layout/l-footer";
+@import "layout/l-header";
+@import "layout/l-sidebar";
