@@ -4,10 +4,19 @@
 	}
 
 	a {
+		@include fontSize(18px);
+
+		color: $lightestGrey;
 		display: inline-block;
+		font-family: $headingFont;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding: 0.6em 0.94em;
 
 		&:hover {
 			border-top: 3px solid $darkBlue;
+			color: $darkBlue;
+			margin-top: -3px;
 		}
 	}
 }

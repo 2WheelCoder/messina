@@ -41,6 +41,7 @@
 /* line 1, ../sass/base/_elements.scss */
 body {
   font-family: Georgia, serif;
+  margin: 0;
 }
 
 /**
@@ -73,6 +74,11 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #cfcfcf;
 }
 
+/* line 8, ../sass/components/_header.scss */
+.page-header-logo {
+  margin: 1.25em 0 0.3em;
+}
+
 /* line 2, ../sass/components/_main-content.scss */
 .main-content p {
   -webkit-column-count: 2;
@@ -89,11 +95,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 6, ../sass/components/_main-nav.scss */
 .main-nav a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #cfcfcf;
   display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.6em 0.94em;
 }
-/* line 9, ../sass/components/_main-nav.scss */
+/* line 16, ../sass/components/_main-nav.scss */
 .main-nav a:hover {
   border-top: 3px solid #2f2e46;
+  color: #2f2e46;
+  margin-top: -3px;
 }
 
 /* line 1, ../sass/components/_nav.scss */
