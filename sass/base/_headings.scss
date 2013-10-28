@@ -19,3 +19,18 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $headingFont;
 }
+
+.heading {
+	@include fontSize(30px);
+	font-weight: 400;
+	margin: 0 0 0.9em;
+}
+
+.subheading {
+	@include fontSize(20px);
+
+	border-top: 1px $contentBorderStyle $contentBorderColor;
+	font-weight: 400;
+	margin: 0 0 1.4em;
+	padding: 1.1em 0 0;
+}

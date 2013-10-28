@@ -1,7 +1,12 @@
 .main-content {
+	padding: 0 0 1.625em;
+	
 	p {
 		@include column-count(2);
+		@include column-gap(58px);
 		
 		color: $darkestGrey;
+		hyphens: auto;
+		margin: 0 0 1.125em;
 	}
 }

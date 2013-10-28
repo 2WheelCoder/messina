@@ -56,6 +56,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* line 23, ../sass/base/_headings.scss */
+.heading {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin: 0 0 0.9em;
+}
+
+/* line 29, ../sass/base/_headings.scss */
+.subheading {
+  font-size: 20px;
+  font-size: 1.25rem;
+  border-top: 1px dotted whitesmoke;
+  font-weight: 400;
+  margin: 0 0 1.4em;
+  padding: 1.1em 0 0;
+}
+
 /* Components and abstractions */
 /* line 1, ../sass/components/_btn.scss */
 .btn {
@@ -79,14 +97,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.25em 0 0.3em;
 }
 
-/* line 2, ../sass/components/_main-content.scss */
+/* line 1, ../sass/components/_main-content.scss */
+.main-content {
+  padding: 0 0 1.625em;
+}
+/* line 4, ../sass/components/_main-content.scss */
 .main-content p {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -ms-column-count: 2;
   -o-column-count: 2;
   column-count: 2;
+  -webkit-column-gap: 58px;
+  -moz-column-gap: 58px;
+  -ms-column-gap: 58px;
+  -o-column-gap: 58px;
+  column-gap: 58px;
   color: #4c4c4c;
+  hyphens: auto;
+  margin: 0 0 1.125em;
 }
 
 /* line 2, ../sass/components/_main-nav.scss */
@@ -140,14 +169,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Layout */
 /* line 1, ../sass/layout/_l-content.scss */
 .content-wrapper {
-  margin: 0 auto;
+  margin: 2.5em auto 0;
   width: 940px;
 }
 
 /* line 8, ../sass/layout/_l-content.scss */
 .main-content {
   float: left;
-  width: 660px;
+  width: 701px;
 }
 
 /* line 1, ../sass/layout/_l-footer.scss */
@@ -186,5 +215,5 @@ header h2 {
 /* line 1, ../sass/layout/_l-sidebar.scss */
 .sidebar {
   float: right;
-  width: 220px;
+  width: 221px;
 }
