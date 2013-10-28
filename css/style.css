@@ -97,12 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.25em 0 0.3em;
 }
 
-/* line 1, ../sass/components/_main-content.scss */
-.main-content {
+/* line 1, ../sass/components/_text-content.scss */
+.text-content {
   padding: 0 0 1.625em;
 }
-/* line 4, ../sass/components/_main-content.scss */
-.main-content p {
+/* line 4, ../sass/components/_text-content.scss */
+.text-content p {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -ms-column-count: 2;
@@ -174,9 +174,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 8, ../sass/layout/_l-content.scss */
-.main-content {
+.text-content {
   float: left;
-  width: 701px;
+  padding: 0 40px 0 0;
+  width: 661px;
 }
 
 /* line 1, ../sass/layout/_l-footer.scss */
