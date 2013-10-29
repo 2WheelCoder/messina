@@ -55,6 +55,19 @@
   font-style: italic;
 }
 
+/* From http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
+/* line 3, ../sass/global/extends/_visuallyhidden.scss */
+.search h2, header h2 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 /* Base styles; unclassed HTML elements etc. */
 /* line 1, ../sass/base/_elements.scss */
 body {
@@ -221,10 +234,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.8em;
 }
 
-/* line 2, ../sass/components/_search.scss */
-.search h2 {
-  display: none;
-}
 /* line 6, ../sass/components/_search.scss */
 .search input {
   font-size: 14px;
@@ -291,10 +300,6 @@ header h1 {
 /* line 9, ../sass/layout/_l-header.scss */
 header nav {
   text-align: center;
-}
-/* line 13, ../sass/layout/_l-header.scss */
-header h2 {
-  display: none;
 }
 
 /* line 1, ../sass/layout/_l-sidebar.scss */

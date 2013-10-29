@@ -1,6 +1,6 @@
 .search {
 	h2 {
-		display: none;
+		@extend %visuallyhidden;
 	}
 
 	input {
