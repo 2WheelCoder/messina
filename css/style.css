@@ -69,6 +69,14 @@
 }
 
 /* Base styles; unclassed HTML elements etc. */
+@font-face {
+  font-family: 'junction-regular';
+  src: url("../fonts/Junction-webfont.eot");
+  src: url("../fonts/Junction-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Junction-webfont.woff") format("woff"), url("../fonts/Junction-webfont.ttf") format("truetype"), url("../fonts/Junction-webfont.svg#junction_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 1, ../sass/base/_elements.scss */
 body {
   font-family: Georgia, serif;
@@ -84,7 +92,7 @@ body {
  */
 /* line 19, ../sass/base/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: junction-regular, sans-serif;
 }
 
 /* line 23, ../sass/base/_headings.scss */
@@ -186,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.125rem;
   color: #cfcfcf;
   display: inline-block;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: junction-regular, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   padding: 0.6em 0.94em;
