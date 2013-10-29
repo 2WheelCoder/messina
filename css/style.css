@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 400;
-  margin: 0 0 0.9em;
+  margin: 0 0 0.63em;
 }
 
 /* line 29, ../sass/base/_headings.scss */
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   border-top: 1px dotted whitesmoke;
   font-weight: 400;
-  margin: 0 0 1.4em;
+  margin: 0 0 1.05em;
   padding: 1.1em 0 0;
 }
 
@@ -131,12 +131,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 58px;
 }
 
-/* line 1, ../sass/components/_text-content.scss */
-.text-content {
+/* line 1, ../sass/components/_content-text.scss */
+.content-text {
   padding: 0 0 1.625em;
 }
-/* line 4, ../sass/components/_text-content.scss */
-.text-content p {
+/* line 4, ../sass/components/_content-text.scss */
+.content-text p {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -ms-column-count: 2;
@@ -149,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   column-gap: 58px;
   color: #4c4c4c;
   hyphens: auto;
+  line-height: 1.4;
   margin: 0 0 1.125em;
 }
 
@@ -168,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 2, ../sass/components/_nav-footer.scss */
 .nav-footer li {
-  margin: 0 0 0.8em;
+  margin: 0 0 1.125em;
 }
 /* line 9, ../sass/components/_nav-footer.scss */
 .nav-footer a:hover, .nav-footer a.active {
@@ -224,18 +225,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../sass/components/_page-footer.scss */
 .page-footer-wrapper {
-  -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 2px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 2px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 3px 0px rgba(0, 0, 0, 0.1);
   background: url(../img/footer-bg.png) repeat;
-  padding: 2.25em 0 7.5em;
+  padding: 2.5em 0 7.5em;
 }
 
 /* line 14, ../sass/components/_page-footer.scss */
 .page-footer-contact h2 {
   font-family: Georgia, serif;
   font-weight: 500;
-  margin: 0 0 0.8em;
+  margin: 0 0 1.125em;
 }
 
 /* line 6, ../sass/components/_search.scss */
@@ -269,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 8, ../sass/layout/_l-content.scss */
-.text-content {
+.content-text {
   float: left;
   padding: 0 40px 0 0;
   width: 661px;

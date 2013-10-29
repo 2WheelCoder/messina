@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .heading {
 	@include fontSize(30px);
 	font-weight: 400;
-	margin: 0 0 0.9em;
+	margin: 0 0 0.63em;
 }
 
 .subheading {
@@ -31,6 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	border-top: 1px $contentBorderStyle $contentBorderColor;
 	font-weight: 400;
-	margin: 0 0 1.4em;
+	margin: 0 0 1.05em;
 	padding: 1.1em 0 0;
 }

@@ -1,4 +1,4 @@
-.text-content {
+.content-text {
 	padding: 0 0 1.625em;
 
 	p {
@@ -7,6 +7,7 @@
 		
 		color: $darkestGrey;
 		hyphens: auto;
+		line-height: 1.4;
 		margin: 0 0 1.125em;
 	}
 }

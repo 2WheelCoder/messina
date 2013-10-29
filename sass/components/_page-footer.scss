@@ -1,9 +1,9 @@
 .page-footer-wrapper {
 	@extend %basic-border-top;
-	@include single-box-shadow(rgba(0,0,0,0.1), 0, 1px, 2px, 0, true);
+	@include single-box-shadow(rgba(0,0,0,0.1), 0, 2px, 3px, 0px, true);
 
 	background: url(../img/footer-bg.png) repeat;
-	padding: 2.25em 0 7.5em;
+	padding: 2.5em 0 7.5em;
 }
 
 .page-footer-contact {
@@ -14,6 +14,6 @@
 	h2 {
 		font-family: $bodyFont;
 		font-weight: 500;
-		margin: 0 0 0.8em;
+		margin: 0 0 1.125em;
 	}
 }
