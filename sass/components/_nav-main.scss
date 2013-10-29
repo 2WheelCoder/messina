@@ -10,8 +10,9 @@
 		display: inline-block;
 		font-family: $headingFont;
 		font-weight: 300;
+		margin: 0 0.92em;
 		text-transform: uppercase;
-		padding: 0.6em 0.94em;
+		padding: 0.6em 0;
 
 		&:hover {
 			border-top: 3px solid $darkBlue;

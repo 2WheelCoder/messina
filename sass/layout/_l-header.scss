@@ -1,17 +1,24 @@
-header {
-	
-	h1 {
-		margin: 0 auto;
-		width: $pageWidth;
-		text-align: center;
-	}
-
+.page-header {
 	nav {
 		text-align: center;
 	}
 
 	h2 {
-		@extend %visuallyhidden;
+		@extend %visually-hidden;
 	}
 
+}
+
+.page-header-logo {
+	margin: 1.25em auto 0.5em;
+	width: $pageWidth;
+
+	a {
+		display: block;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }

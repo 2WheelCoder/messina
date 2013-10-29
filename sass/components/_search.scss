@@ -1,12 +1,13 @@
 .search {
 	h2 {
-		@extend %visuallyhidden;
+		@extend %visually-hidden;
 	}
 
 	input {
 		@extend %basic-border;
 		@include fontSize(14px);
 
+		font-family: $headingFont;
 		height: 28px;
 		margin: 0 1px 0 0;
 		outline: none;
