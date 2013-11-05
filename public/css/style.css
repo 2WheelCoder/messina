@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75rem;
   background: none;
   color: #90989b;
+  float: right;
   font-weight: 600;
   padding: 0 4px;
   height: 30px;
@@ -302,16 +303,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* line 12, ../../sass/layout/_l-header.scss */
+/* line 11, ../../sass/layout/_l-header.scss */
 .page-header-logo {
   margin: 1.25em auto 0.5em;
   width: 940px;
 }
-/* line 16, ../../sass/layout/_l-header.scss */
+/* line 15, ../../sass/layout/_l-header.scss */
 .page-header-logo a {
   display: block;
 }
-/* line 20, ../../sass/layout/_l-header.scss */
+/* line 19, ../../sass/layout/_l-header.scss */
 .page-header-logo img {
   display: block;
   margin: 0 auto;
