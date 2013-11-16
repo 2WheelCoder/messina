@@ -26,7 +26,7 @@
  * 
  */
 /* line 1, ../../sass/global/extends/_basic-border.scss */
-.btn-search, .search input {
+.btn-search, .btn-add-to-cart, .search input {
   border: 1px solid #cfcfcf;
 }
 
@@ -41,7 +41,7 @@
 }
 
 /* line 1, ../../sass/global/extends/_clearfix.scss */
-.content-wrapper, .page-footer {
+.content-product-desc, .product-detail-option, .content-wrapper, .page-footer {
   content: "";
   display: table;
   clear: both;
@@ -93,9 +93,10 @@ body {
 /* line 19, ../../sass/base/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: junction-regular, sans-serif;
+  margin-top: 0;
 }
 
-/* line 23, ../../sass/base/_headings.scss */
+/* line 24, ../../sass/base/_headings.scss */
 .heading {
   font-size: 30px;
   font-size: 1.875rem;
@@ -103,14 +104,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.63em;
 }
 
-/* line 29, ../../sass/base/_headings.scss */
+/* line 30, ../../sass/base/_headings.scss */
 .subheading {
   font-size: 20px;
   font-size: 1.25rem;
   border-top: 1px dotted whitesmoke;
   font-weight: 400;
-  margin: 0 0 1.05em;
-  padding: 1.1em 0 0;
+  margin: 2em 0 1.05em;
 }
 
 /* Components and abstractions */
@@ -132,12 +132,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 58px;
 }
 
+/* line 18, ../../sass/components/_btn.scss */
+.btn-add-to-cart {
+  background: none;
+  color: #90989b;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
 /* line 1, ../../sass/components/_content-text.scss */
 .content-text {
   padding: 0 0 1.625em;
 }
 /* line 4, ../../sass/components/_content-text.scss */
-.content-text p {
+.content-text > div {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -ms-column-count: 2;
@@ -148,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
   -ms-column-gap: 58px;
   -o-column-gap: 58px;
   column-gap: 58px;
+  text-align: justify;
+}
+/* line 11, ../../sass/components/_content-text.scss */
+.content-text p {
   color: #4c4c4c;
   hyphens: auto;
   line-height: 1.4;
@@ -261,6 +273,92 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 2em 0 0.5em;
   padding: 0 0 0.5em;
+}
+
+/* line 2, ../../sass/components/_content-product-detail.scss */
+.content-product-detail .gallery, .content-product-detail .content-product-desc {
+  display: inline-block;
+  margin-right: 1.25em;
+  vertical-align: top;
+}
+
+/* line 9, ../../sass/components/_content-product-detail.scss */
+.content-product-desc {
+  width: 18.625em;
+}
+/* line 14, ../../sass/components/_content-product-detail.scss */
+.content-product-desc h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+/* line 19, ../../sass/components/_content-product-detail.scss */
+.content-product-desc .btn-add-to-cart {
+  float: right;
+  margin-top: -0.45em;
+}
+
+/* line 25, ../../sass/components/_content-product-detail.scss */
+.content-product-copy {
+  color: #aaa9ba;
+  font-size: 0.875em;
+}
+
+/* line 30, ../../sass/components/_content-product-detail.scss */
+.content-product-dimensions {
+  color: #cfcfcf;
+  font-size: 0.875em;
+  float: left;
+  margin-bottom: 1.15em;
+  white-space: pre;
+}
+
+/* line 38, ../../sass/components/_content-product-detail.scss */
+.content-product-price {
+  color: #2f2e46;
+  float: right;
+  font-family: junction-regular, sans-serif;
+  margin-top: 2.125em;
+}
+
+/* line 45, ../../sass/components/_content-product-detail.scss */
+.product-detail-option {
+  float: left;
+}
+
+/* line 2, ../../sass/components/_gallery.scss */
+.gallery a {
+  display: inline-block;
+}
+
+/* line 7, ../../sass/components/_gallery.scss */
+.gallery-thumbs {
+  list-style: none;
+  padding: 0;
+}
+/* line 11, ../../sass/components/_gallery.scss */
+.gallery-thumbs li {
+  display: inline-block;
+  margin-right: 1.25em;
+}
+/* line 16, ../../sass/components/_gallery.scss */
+.gallery-thumbs li:last-child {
+  margin-right: 0;
+}
+
+/* line 21, ../../sass/components/_gallery.scss */
+.gallery-img-main {
+  border: 1px solid #cfcfcf;
+  display: block;
+}
+
+/* line 2, ../../sass/components/_suggested-items.scss */
+.suggested-items ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 7, ../../sass/components/_suggested-items.scss */
+.suggested-items li {
+  display: inline-block;
 }
 
 /* Layout */

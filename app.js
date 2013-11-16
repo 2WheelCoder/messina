@@ -30,6 +30,7 @@ if ('development' == app.get('env')) {
 // Create about.jade and get here
 app.get('/', routes.index);
 app.get('/about', routes.about);
+app.get('/product-detail', routes.productDetail);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

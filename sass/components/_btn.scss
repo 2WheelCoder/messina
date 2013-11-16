@@ -14,3 +14,12 @@
 	height: 30px;
 	width: 58px;
 }
+
+.btn-add-to-cart {
+	@extend %basic-border;
+
+	background: none;
+	color: $lightGrey;
+	font-size: 1em;
+	padding: 0.5em;
+}

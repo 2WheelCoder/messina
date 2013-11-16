@@ -1,0 +1,60 @@
+extends layout
+block content
+	aside.sidebar
+		.search
+			h2 Search
+			form(action='search.js')
+				input(type='text')
+				button.btn.btn-search(type='submit') Search
+		h2 Kitchen
+		ul.nav.nav-sidebar
+			li
+				a(href='#') Dining Tables &amp; Chairs
+			li
+				a(href='#') Must Have Appliances
+			li
+				a(href='#') Plates, Bowls &amp; Glasses
+			li
+				a(href='#') Tableware &amp; Accoutrement
+	section.content-product-detail
+		.gallery
+			img.gallery-img-main(src='img/product.jpg')
+			ul.gallery-thumbs
+				li
+					img.gallery-img(src='img/product-thumb-1.jpg')
+				li
+					img.gallery-img(src='img/product-thumb-2.jpg')
+				li
+					img.gallery-img(src='img/product-thumb-3.jpg')
+				li
+					img.gallery-img(src='img/product-thumb-4.jpg')
+				li
+					img.gallery-img(src='img/product-thumb-5.jpg')
+		.content-product-desc
+			h2 Big Sir Dining Table
+			p.content-product-copy Like its namesake, this casual, contemporary dining group is big, bold and natural. The rustic beauty of Big Sur lies in its solid European white oak with naturally occurring splits, cracks and knots.
+			p.content-product-dimensions 65&rdquo; x 37.5&rdquo; x 30&rdquo;
+				| Solid white oak
+				| Seats up to six
+				| Made in Poland
+			p.content-product-price $1499
+			select.product-detail-option
+				option Natural Hickory
+				option Cherry
+				option Oak
+			button.btn.btn-add-to-cart Add to Cart
+	section.suggested-items
+		h2 You May Also Like&hellip;
+		ul
+			li.suggested-item
+				a(href='#')
+					img(src='img/suggested-1.jpg')
+			li.suggested-item
+				a(href='#')
+					img(src='img/suggested-2.jpg')
+			li.suggested-item
+				a(href='#')
+					img(src='img/suggested-3.jpg')
+			li.suggested-item
+				a(href='#')
+					img(src='img/suggested-4.jpg')

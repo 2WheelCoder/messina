@@ -1,0 +1,49 @@
+.content-product-detail {
+	.gallery, .content-product-desc {
+		display: inline-block;
+		margin-right: 1.25em;
+		vertical-align: top;
+	}
+}
+
+.content-product-desc {
+	@extend %clearfix;
+
+	width: 18.625em;
+
+	h2 {
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+
+	.btn-add-to-cart {
+		float: right;
+		margin-top: -0.45em;
+	}
+}
+
+.content-product-copy {
+	color: $lighterGrey;
+	font-size: 0.875em;
+}
+
+.content-product-dimensions {
+	color: $lightestGrey;
+	font-size: 0.875em;
+	float: left;
+	margin-bottom: 1.15em;
+	white-space: pre;
+}
+
+.content-product-price {
+	color: $darkBlue;
+	float: right;
+	font-family: $headingFont;
+	margin-top: 2.125em;
+}
+
+.product-detail-option {
+	@extend %clearfix;
+
+	float: left;
+}

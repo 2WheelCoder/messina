@@ -18,6 +18,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $headingFont;
+  margin-top: 0;
 }
 
 .heading {
@@ -31,6 +32,5 @@ h1, h2, h3, h4, h5, h6 {
 
 	border-top: 1px $contentBorderStyle $contentBorderColor;
 	font-weight: 400;
-	margin: 0 0 1.05em;
-	padding: 1.1em 0 0;
+	margin: 2em 0 1.05em;
 }

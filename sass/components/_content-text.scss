@@ -1,10 +1,14 @@
 .content-text {
 	padding: 0 0 1.625em;
 
-	p {
+	> div {
 		@include column-count(2);
 		@include column-gap(58px);
-		
+
+		text-align: justify;
+	}
+
+	p {
 		color: $darkestGrey;
 		hyphens: auto;
 		line-height: 1.4;
