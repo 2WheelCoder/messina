@@ -352,11 +352,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 2, ../../sass/components/_suggested-items.scss */
+.suggested-items h2 {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 2em 0 1em;
+}
+/* line 8, ../../sass/components/_suggested-items.scss */
 .suggested-items ul {
   list-style: none;
   padding: 0;
 }
-/* line 7, ../../sass/components/_suggested-items.scss */
+/* line 13, ../../sass/components/_suggested-items.scss */
 .suggested-items li {
   display: inline-block;
 }
