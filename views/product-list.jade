@@ -1,0 +1,25 @@
+extends layout
+block content
+	aside.sidebar
+		.search
+			h2 Search
+			form(action='search.js')
+				input(type='text')
+				button.btn.btn-search(type='submit') Search
+		h2 Kitchen
+		ul.nav.nav-sidebar
+			li
+				a(href='#') Dining Tables &amp; Chairs
+			li
+				a(href='#') Must Have Appliances
+			li
+				a(href='#') Plates, Bowls &amp; Glasses
+			li
+				a(href='#') Tableware &amp; Accoutrement
+	section.content-product-list
+		ul
+			li
+				h2 Big Sir Dining Table
+				img
+				button
+				p.content-product-list-price
