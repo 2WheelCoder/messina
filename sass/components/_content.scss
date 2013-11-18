@@ -15,3 +15,11 @@
 		margin: 0 0 1.125em;
 	}
 }
+
+.content-product-detail {
+	.gallery, .product-desc {
+		display: inline-block;
+		margin-right: 1.25em;
+		vertical-align: top;
+	}
+}

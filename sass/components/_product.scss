@@ -1,12 +1,4 @@
-.content-product-detail {
-	.gallery, .content-product-desc {
-		display: inline-block;
-		margin-right: 1.25em;
-		vertical-align: top;
-	}
-}
-
-.content-product-desc {
+.product-desc {
 	@extend %clearfix;
 
 	width: 18.625em;
@@ -22,12 +14,12 @@
 	}
 }
 
-.content-product-copy {
+.product-copy {
 	color: $lighterGrey;
 	font-size: 0.875em;
 }
 
-.content-product-dimensions {
+.product-dimensions {
 	color: $lightestGrey;
 	font-size: 0.875em;
 	float: left;
@@ -35,14 +27,14 @@
 	white-space: pre;
 }
 
-.content-product-price {
+.product-price {
 	color: $darkBlue;
 	float: right;
 	font-family: $headingFont;
 	margin-top: 2.125em;
 }
 
-.product-detail-option {
+.product-option {
 	@extend %clearfix;
 
 	float: left;
