@@ -5,8 +5,14 @@
 	width: $pageWidth;
 }
 
-.content-text {
-	float: left;
-	padding: 0 40px 0 0;
-	width: 661px;
+.content {
+	@extend %clearfix;
+
+	width: 43.75em;
+	padding: 0 1.25em 1.625em 0;
+
+	&.content-text {
+		width: 40em;
+		padding-right: 3.75em;
+	}
 }

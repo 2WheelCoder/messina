@@ -1,5 +1,6 @@
 .content-text {
-	padding: 0 0 1.625em;
+	width: 42.5em;
+	padding-right: 2.5em;
 
 	> div {
 		@include column-count(2);
@@ -18,14 +19,45 @@
 
 .content-product-detail {
 	.gallery, .product-desc {
-		display: inline-block;
+		display: block;
+		float: left;
+	}
+
+	.gallery {
 		margin-right: 1.25em;
-		vertical-align: top;
+		width: 23.75em;
+	}
+
+	.product-desc {
+		width: 18.75em;
 	}
 }
 
 .content-product-list {
-	h1 {
+	h1, h2 {
 		@extend %visually-hidden;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin: 0 1.25em 0 0;
+		position: relative;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		display: block;
+
+		> button {
+			bottom: 1em;
+			font-size: 0.75em;
+			left: 28%;
+			position: absolute;
+			width: 44%;
+		}
 	}
 }

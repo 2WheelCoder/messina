@@ -40,8 +40,8 @@
   border-bottom: 1px solid #cfcfcf;
 }
 
-/* line 1, ../../sass/global/extends/_clearfix.scss */
-.product-desc, .product-option, .content-wrapper, .page-footer {
+/* line 2, ../../sass/global/extends/_clearfix.scss */
+.product-desc:after, .product-option:after, .content-wrapper:after, .content:after, .page-footer:after {
   content: "";
   display: table;
   clear: both;
@@ -57,7 +57,7 @@
 
 /* From http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
 /* line 3, ../../sass/global/extends/_visually-hidden.scss */
-.content-product-list h1, .search h2, .page-header h2 {
+.content-product-list h1, .content-product-list h2, .search h2, .product-overlay, .page-header h2 {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -142,9 +142,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../../sass/components/_content.scss */
 .content-text {
-  padding: 0 0 1.625em;
+  width: 42.5em;
+  padding-right: 2.5em;
 }
-/* line 4, ../../sass/components/_content.scss */
+/* line 5, ../../sass/components/_content.scss */
 .content-text > div {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -158,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   column-gap: 58px;
   text-align: justify;
 }
-/* line 11, ../../sass/components/_content.scss */
+/* line 12, ../../sass/components/_content.scss */
 .content-text p {
   color: #4c4c4c;
   hyphens: auto;
@@ -166,11 +167,43 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1.125em;
 }
 
-/* line 20, ../../sass/components/_content.scss */
+/* line 21, ../../sass/components/_content.scss */
 .content-product-detail .gallery, .content-product-detail .product-desc {
-  display: inline-block;
+  display: block;
+  float: left;
+}
+/* line 26, ../../sass/components/_content.scss */
+.content-product-detail .gallery {
   margin-right: 1.25em;
-  vertical-align: top;
+  width: 23.75em;
+}
+/* line 31, ../../sass/components/_content.scss */
+.content-product-detail .product-desc {
+  width: 18.75em;
+}
+
+/* line 41, ../../sass/components/_content.scss */
+.content-product-list li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1.25em 0 0;
+  position: relative;
+}
+/* line 47, ../../sass/components/_content.scss */
+.content-product-list li:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 52, ../../sass/components/_content.scss */
+.content-product-list a {
+  display: block;
+}
+/* line 55, ../../sass/components/_content.scss */
+.content-product-list a > button {
+  bottom: 1em;
+  font-size: 0.75em;
+  left: 28%;
+  position: absolute;
+  width: 44%;
 }
 
 /* line 1, ../../sass/components/_nav.scss */
@@ -354,18 +387,22 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* line 2, ../../sass/components/_suggested-items.scss */
+/* line 1, ../../sass/components/_suggested-items.scss */
+.suggested-items {
+  clear: both;
+}
+/* line 4, ../../sass/components/_suggested-items.scss */
 .suggested-items h2 {
   font-size: 1.25em;
   font-weight: 300;
   margin: 2em 0 1em;
 }
-/* line 8, ../../sass/components/_suggested-items.scss */
+/* line 10, ../../sass/components/_suggested-items.scss */
 .suggested-items ul {
   list-style: none;
   padding: 0;
 }
-/* line 13, ../../sass/components/_suggested-items.scss */
+/* line 15, ../../sass/components/_suggested-items.scss */
 .suggested-items li {
   display: inline-block;
 }
@@ -374,21 +411,25 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1, ../../sass/layout/_l-content.scss */
 .content-wrapper {
   margin: 2.625em auto 0;
-  width: 940px;
+  width: 58.75em;
 }
 
 /* line 8, ../../sass/layout/_l-content.scss */
-.content-text {
-  float: left;
-  padding: 0 40px 0 0;
-  width: 661px;
+.content {
+  width: 43.75em;
+  padding: 0 1.25em 1.625em 0;
+}
+/* line 14, ../../sass/layout/_l-content.scss */
+.content.content-text {
+  width: 40em;
+  padding-right: 3.75em;
 }
 
 /* line 1, ../../sass/layout/_l-footer.scss */
 .page-footer {
   margin: 0 auto;
   position: relative;
-  width: 940px;
+  width: 58.75em;
 }
 
 /* line 9, ../../sass/layout/_l-footer.scss */
@@ -413,13 +454,14 @@ h1, h2, h3, h4, h5, h6 {
 /* line 11, ../../sass/layout/_l-header.scss */
 .page-header-logo {
   margin: 1.25em auto 0.5em;
-  width: 940px;
 }
-/* line 15, ../../sass/layout/_l-header.scss */
+/* line 14, ../../sass/layout/_l-header.scss */
 .page-header-logo a {
   display: block;
+  margin: 0 auto;
+  width: 222px;
 }
-/* line 19, ../../sass/layout/_l-header.scss */
+/* line 20, ../../sass/layout/_l-header.scss */
 .page-header-logo img {
   display: block;
   margin: 0 auto;
@@ -428,5 +470,5 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1, ../../sass/layout/_l-sidebar.scss */
 .sidebar {
   float: right;
-  width: 221px;
+  width: 13.75em;
 }
