@@ -1,7 +1,4 @@
 .content-text {
-	width: 42.5em;
-	padding-right: 2.5em;
-
 	> div {
 		@include column-count(2);
 		@include column-gap(58px);
@@ -38,6 +35,10 @@
 		@extend %visually-hidden;
 	}
 
+	ol {
+		padding: 0;
+	}
+
 	li {
 		display: inline-block;
 		list-style: none;
@@ -51,13 +52,13 @@
 
 	a {
 		display: block;
+	}
 
-		> button {
-			bottom: 1em;
-			font-size: 0.75em;
-			left: 28%;
-			position: absolute;
-			width: 44%;
-		}
+	.quick-view {
+		bottom: 1em;
+		font-size: 0.75em;
+		left: 28%;
+		position: absolute;
+		width: 44%;
 	}
 }

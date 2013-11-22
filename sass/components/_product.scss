@@ -35,7 +35,6 @@
 }
 
 .product-option {
-	@extend %clearfix;
-
+	clear: both;
 	float: left;
 }
