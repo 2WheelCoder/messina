@@ -23,3 +23,9 @@
 		vertical-align: top;
 	}
 }
+
+.content-product-list {
+	h1 {
+		@extend %visually-hidden;
+	}
+}

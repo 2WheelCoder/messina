@@ -7,13 +7,12 @@
 }
 
 .page-footer-contact {
-	h2, p {
+	display: inline-block;
+	
+	p {
 		@extend %footer-text;
-	}
 
-	h2 {
-		font-family: $bodyFont;
-		font-weight: 500;
+		height: 19px;
 		margin: 0 0 1.125em;
 	}
 }
