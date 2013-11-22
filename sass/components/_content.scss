@@ -55,10 +55,19 @@
 	}
 
 	.quick-view {
-		bottom: 1em;
+		bottom: 4.2em;
 		font-size: 0.75em;
 		left: 28%;
 		position: absolute;
 		width: 44%;
+	}
+
+	.content-product-list-price {
+		bottom: 0.625em;
+		left: 25%;
+		margin: 0;
+		position: absolute;
+		text-align: center;
+		width: 50%;
 	}
 }
