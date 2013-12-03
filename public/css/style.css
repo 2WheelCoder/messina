@@ -26,7 +26,7 @@
  * 
  */
 /* line 1, ../../sass/global/extends/_basic-border.scss */
-.btn-search, .btn-add-to-cart, .search input {
+.btn-search, .btn-add-to-cart, .content-product-list a:hover .quick-view, .search input {
   border: 1px solid #cfcfcf;
 }
 
@@ -57,7 +57,7 @@
 
 /* From http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
 /* line 3, ../../sass/global/extends/_visually-hidden.scss */
-.content-product-list h1, .content-product-list h2, .search h2, .product-overlay, .page-header h2 {
+.content-product-list h1, .content-product-list h2, .content-product-list .quick-view, .content-product-list .content-product-list-price, .search h2, .product-overlay, .page-header h2 {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -178,40 +178,90 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 38, ../../sass/components/_content.scss */
+.content-product-list h2 {
+  color: #f4f4f4;
+  font-size: 1em;
+  font-weight: 300;
+  left: 10%;
+  position: absolute;
+  text-align: center;
+  top: 0.6875em;
+  z-index: 10;
+}
+/* line 52, ../../sass/components/_content.scss */
 .content-product-list ol {
   padding: 0;
 }
-/* line 42, ../../sass/components/_content.scss */
+/* line 56, ../../sass/components/_content.scss */
 .content-product-list li {
   display: inline-block;
   list-style: none;
   margin: 0 1.25em 0 0;
   position: relative;
 }
-/* line 48, ../../sass/components/_content.scss */
+/* line 62, ../../sass/components/_content.scss */
 .content-product-list li:nth-child(3n) {
   margin-right: 0;
 }
-/* line 53, ../../sass/components/_content.scss */
+/* line 67, ../../sass/components/_content.scss */
 .content-product-list a {
   display: block;
 }
-/* line 57, ../../sass/components/_content.scss */
+/* line 71, ../../sass/components/_content.scss */
+.content-product-list a:hover .content-product-list-price, .content-product-list a:hover .quick-view, .content-product-list a:hover h2 {
+  clip: auto;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+/* line 78, ../../sass/components/_content.scss */
+.content-product-list a:hover h2 {
+  width: 80%;
+}
+/* line 82, ../../sass/components/_content.scss */
+.content-product-list a:hover .quick-view {
+  height: 2.17em;
+  width: 44%;
+}
+/* line 89, ../../sass/components/_content.scss */
+.content-product-list a:hover .content-product-list-price {
+  width: 50%;
+}
+/* line 93, ../../sass/components/_content.scss */
+.content-product-list a:hover:after {
+  background-image: -webkit-gradient(radial, 45px 45px, 0, 45px 45px, 110, color-stop(0%, rgba(242, 242, 242, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  background-image: -webkit-radial-gradient(45px 45px, rgba(242, 242, 242, 0.4) 0px, rgba(0, 0, 0, 0.4) 110px);
+  background-image: -moz-radial-gradient(45px 45px, rgba(242, 242, 242, 0.4) 0px, rgba(0, 0, 0, 0.4) 110px);
+  background-image: -o-radial-gradient(45px 45px, rgba(242, 242, 242, 0.4) 0px, rgba(0, 0, 0, 0.4) 110px);
+  background-image: radial-gradient(45px 45px, rgba(242, 242, 242, 0.4) 0px, rgba(0, 0, 0, 0.4) 110px);
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 105, ../../sass/components/_content.scss */
 .content-product-list .quick-view {
+  background: white;
   bottom: 4.2em;
+  cursor: pointer;
   font-size: 0.75em;
   left: 28%;
   position: absolute;
-  width: 44%;
+  text-transform: uppercase;
+  z-index: 10;
 }
-/* line 65, ../../sass/components/_content.scss */
+/* line 118, ../../sass/components/_content.scss */
 .content-product-list .content-product-list-price {
+  color: #f4f4f4;
   bottom: 0.625em;
+  font-family: junction-regular, sans-serif;
   left: 25%;
   margin: 0;
   position: absolute;
   text-align: center;
-  width: 50%;
+  z-index: 10;
 }
 
 /* line 1, ../../sass/components/_nav.scss */
