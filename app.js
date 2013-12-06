@@ -30,8 +30,12 @@ if ('development' == app.get('env')) {
 // Create about.jade and get here
 app.get('/', routes.index);
 app.get('/about', routes.about);
-app.get('/product-detail', routes.productDetail);
-app.get('/product-list', routes.productList);
+
+//API
+
+// PRODUCTS
+app.get('/products', routes.productList);
+app.get('/products/:id', routes.products);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
