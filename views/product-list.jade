@@ -19,47 +19,48 @@ block content
 	.content.content-product-list
 		h1 Kitchen Dining Tables
 		ol
-			li
-				a(href="#")
+			li#1
+				a(href="#").quick-view
 					h2 Big Sur Dining Table
 					img(src="img/list-1.jpg")
 					button.quick-view Quick View
 					p.content-product-list-price $1499
-			li
-				a(href="#")
+			li#2
+				a(href="#").quick-view
 					h2 Basque Honey Table
 					img(src="img/list-2.jpg")
 					button.quick-view Quick View
 					p.content-product-list-price $1499
-			li
-				a(href="#")
+			li#3
+				a(href="#").quick-view
 					h2 Cucina Table
 					img(src="img/list-3.jpg")
 					button.quick-view Quick View
 					p.content-product-list-price $1499
-			li
-				a(href="#")
+			li#4
+				a(href="#").quick-view
 					h2 Arlington Table
 					img(src="img/list-4.jpg")
 					button.quick-view Quick View
 					p.content-product-list-price $1499
-			li
-				a(href="#")
+			li#5
+				a(href="#").quick-view
 					h2 Pacifica Table
 					img(src="img/list-5.jpg")
 					button.quick-view Quick View
 					p.content-product-list-price $1499
-			li
-				a(href="#")
+			li#6
+				a(href="#").quick-view
 					h2 Sideboard Table
 					img(src="img/list-6.jpg")
 					button.quick-view Quick View
 					p.content-product-list-price $1499
 		//- TODO: Remove all but one product overlay. Use AJAX to pull in content. Use a templating engine to convert from JSON into html.
-		#product-overlay.product-overlay
-			img(src="img/product-overlay.jpg")
-			p.product-overlay-title
-			p.product-overlay-copy
-			p.product-overlay-dimensions
-			p.product-overlay-price
+		#quick-view-detail.quick-view-detail
+			img(src="img/product-quick-view.jpg")
+			p.quick-view-title
+			p.quick-view-copy
+			p.quick-view-dimensions
+			p.quick-view-price
 			button.btn-add-to-cart Add to Cart
+			img.loading-placeholder(src="img/loading.gif")

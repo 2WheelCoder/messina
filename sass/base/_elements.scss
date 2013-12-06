@@ -2,3 +2,8 @@ body {
 	font-family: $bodyFont;
 	margin: 0;
 }
+
+button {
+	cursor: pointer;
+	outline: none;
+}

@@ -1,3 +1,7 @@
+.content {
+	position: relative;
+}
+
 .content-text {
 	> div {
 		@include column-count(2);
@@ -68,7 +72,7 @@
 		display: block;
 
 		&:hover {
-			.content-product-list-price, .quick-view, h2 {
+			.content-product-list-price, button.quick-view, h2 {
 				clip: auto;
 				height: auto;
 				width: auto;
@@ -79,7 +83,7 @@
 				width: 80%;
 			}
 
-			.quick-view {
+			button.quick-view {
 				@extend %basic-border;
 
 				height: 2.17em;
@@ -100,19 +104,6 @@
 				top: 0;
 			}
 		}
-	}
-
-	.quick-view {
-		@extend %visually-hidden;
-
-		background: $white;
-		bottom: 4.2em;
-		cursor: pointer;
-		font-size: 0.75em;
-		left: 28%;
-		position: absolute;
-		text-transform: uppercase;
-		z-index: 10;
 	}
 
 	.content-product-list-price {

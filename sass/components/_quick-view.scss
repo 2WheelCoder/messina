@@ -1,0 +1,63 @@
+button.quick-view {
+	@extend %visually-hidden;
+
+	background: $white;
+	bottom: 4.2em;
+	font-size: 0.75em;
+	left: 28%;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+.quick-view-detail {
+	@include border-radius(8px);
+
+	background: $white;
+	border: 1px solid $lightGrey;
+	display: none;
+	min-height: 16.625em;
+	padding: 1.25em;
+	position: absolute;
+	width: 26.125em;
+	z-index: 6;
+
+	* {
+		display: none;
+	}
+
+	.loading-placeholder {
+		position: absolute;
+		display: block;
+		left: 45%;
+		top: 5.3em;
+		width: 10%;
+	}
+	&:after {
+		border-top: 11px solid transparent;
+		border-right: 16px solid $lightGrey;
+		border-bottom: 11px solid transparent;
+		content: '';
+		display: block;
+		height: 0;
+		left: -1em;
+		position: absolute;
+		top: 6em;
+		width: 0;
+		z-index: 3;
+	}
+
+	&:before {
+		border-top: 10px solid transparent;
+		border-right: 15px solid $white;
+		border-bottom: 10px solid transparent;
+		content: '';
+		display: block;
+		height: 0;
+		left: -0.9375em;
+		position: absolute;
+		top: 6.0625em;
+		width: 0;
+		z-index: 9;
+	}
+}
